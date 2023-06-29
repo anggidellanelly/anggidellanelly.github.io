@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Website</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: bold;">Interior Decoration.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../../index.html" style="font-family: 'Montserrat', sans-serif; font-size: 18px;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#categories" style="font-family: 'Montserrat', sans-serif; font-size: 18px;">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#product" style="font-family: 'Montserrat', sans-serif; font-size: 18px;">Product | </a>
+              </li>
+            </ul>
+            <a class="navbar-brand" href="#">
+                <img src="../img/logo.png" alt="logo" width="25" height="24">
+            </a>
+            <span class="navbar-text" style="color: black; padding-top: 10px; margin-left: 0; font-family: 'Montserrat', sans-serif; font-size: 18px;">
+              Hi, Nanda
+            </span>
+          </div>
+        </div>
+      </nav>
+    <!-- Akhir Navbar -->
+    <p style="float: left; margin-left: 150px; font-size: 18px;"><span style="color: #A7A5A5;">Home</span> / Detail Product</p>
+
+    <div class="container" style="margin-left: -60px;" id="categories">
+        <div class="row">
+          <div class="col-lg-6" style="padding-top: 40px;">
+            <img src="../img/sofa.jpeg" alt="Image 1" class="img-fluid mx-auto d-block" style="max-width: 100%; border-radius: 8px;">
+          </div>
+          <div class="col-lg-6" style="padding-top: 30px;">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="../img/sofa.jpeg" alt="Image 2" class="img-fluid mb-3 mx-auto d-block" style="max-width: 100%; border-radius: 15px; padding-top: 10px;">
+              </div>
+              <div class="col-md-6">
+                <img src="../img/sofa.jpeg" alt="Image 3" class="img-fluid mb-3 mx-auto d-block" style="max-width: 100%; border-radius: 15px; padding-top: 10px;">
+              </div>
+              <div class="col-md-6">
+                <img src="../img/sofa.jpeg" alt="Image 4" class="img-fluid mb-3 mx-auto d-block" style="max-width: 100%; border-radius: 8px;">
+              </div>
+              <div class="col-md-6">
+                <img src="../img/sofa.jpeg" alt="Image 5" class="img-fluid mb-3 mx-auto d-block" style="max-width: 100%; border-radius: 8px;">
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      
+      <div class="container" style="margin-bottom: 30px; padding-top: 20px;" id="product">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3>About the Sofa</h3>
+            <p>
+              Butuh sofa baru menjelang hari raya? Datang saja ke Interior Decoration.
+              Ada banyak pilihan sofa empuk dengan variasi warna yang soft. Pastinya <br><br>
+              nuansa rumah akan semakin menyenangkan dan nyaman setelah ganti sofa lama
+              dengan sofa baru dari Interior Decoration. <br><br>
+              Selain sofa, tentunya kami juga
+              menyediakan berbagai macam interior lainnya.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="card" style="border: 1px solid #ccc; border-radius: 8px;">
+              <div class="card-body">
+                <h5 class="card-title">Booking Sofa</h5>
+                <p class="card-text" style="font-size: 25px;">Rp 50.000.000</p>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="color">Color</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control text-center" id="color" value="White" readonly style="background-color: #D9D9D9;">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: #3EDE91B0;"></button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="size">Size</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <button class="btn btn-outline-secondary" type="button" style="background-color: #DA0B0BAD;">-</button>
+                        </div>
+                        <input type="text" class="form-control text-center" id="size" value="M" readonly style="background-color: #D9D9D9;">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary" type="button" style="background: #3EDE91B0;">+</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn" style="background-color: #A68C9A; color: white; margin-top: 10px;">Continue to Book</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>           
+
+    <!-- Product -->
+    <section class="product" id="categories">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h2 class="text-center mb-4" style="color: black; font-family: 'Poppins', sans-serif;"><br>Best Selling Products</h2>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="background-color: #D9D9D987;">
+                        <img src="../img/img-4.jpeg" class="card-img-top" alt="Image 1">
+                        <div class="card-body text-center">
+                            <p class="card-text" style="font-family: 'Poppins', sans-serif;">Minimalis table Rotan<br>$200</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="background-color: #D9D9D987;">
+                        <img src="../img/img-5.jpeg" class="card-img-top" alt="Image 2">
+                        <div class="card-body text-center">
+                            <p class="card-text" style="font-family: 'Poppins', sans-serif;">Hanging Lamp<br>$150</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="background-color: #D9D9D987;">
+                        <img src="../img/img-6.jpeg" class="card-img-top" alt="Image 3">
+                        <div class="card-body text-center">
+                            <p class="card-text" style="font-family: 'Poppins', sans-serif;">Table Lamp<br>$175</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container" style="padding-top: 20px;">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="background-color: #D9D9D987;">
+                        <img src="../img/img-7.jpeg" class="card-img-top" alt="Image 1">
+                        <div class="card-body text-center">
+                            <p class="card-text" style="font-family: 'Poppins', sans-serif;">Minimalis Table Rotan<br>$180</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="background-color: #D9D9D987;">
+                        <img src="../img/img-8.jpeg" class="card-img-top" alt="Image 2">
+                        <div class="card-body text-center">
+                            <p class="card-text" style="font-family: 'Poppins', sans-serif;">Coffe Chair<br>$200</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="background-color: #D9D9D987;">
+                        <img src="../img/img-9.jpeg" class="card-img-top" alt="Image 3">
+                        <div class="card-body text-center">
+                            <p class="card-text" style="font-family: 'Poppins', sans-serif;">Coffe Table<br>$275</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <!-- Akhir Product -->
+
+    <!-- Footer -->
+    <hr style="color: #D9D9D9;">
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <a class="navbar-brand d-flex align-items-center" href="#">
+                <span style="font-size: 20px; font-weight: bold;">Interior Decoration.</span>
+              </a>  
+              <div class="social-icons" style="padding-left: 35px;padding-top: 10px;">
+                <a href="#" style="margin-right: 20px;"><i class="fab fa-facebook-f fa-lg" style="color: black;"></i></a>
+                <a href="#" style="margin-right: 20px;"><i class="fab fa-instagram fa-lg" style="color: black;"></i></a>
+                <a href="#"><i class="fab fa-tiktok fa-lg" style="color: black;"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-6 text-lg-end">
+              <p><span style="font-weight: bold;">Address</span><br>
+                Jl. Arifin Ahmad No.1519<br>
+                Kecamatan Marpoyan Damai, Pekanbaru, Riau 28282<br>
+                0858-9191-7272</p>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <div class="hr-container">
+        <hr class="custom-hr">
+    </div>
+    
+    <div style="margin-left: 105px; margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-size: 10px;">
+        &copy; 2023 Interior Decoration. All rights reserved
+    </div>
+    <!-- Akhir Footer -->
+
+    <!-- JS -->
+    <script src="./asset/style/bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

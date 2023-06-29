@@ -21,7 +21,7 @@
               <div class="d-flex justify-content-center align-items-center">
                 <i class="fas fa-check-circle" style="font-size: 24px; color: #F0188D;"></i>
                 <hr class="mx-2" style="height: 2px; width: 20px; background-color: #000;">
-                <span class="custom-border">2</span>
+                <i class="fas fa-check-circle" style="font-size: 24px; color: #F0188D;"></i>
                 <hr class="mx-2" style="height: 2px; width: 20px; background-color: #000;">
                 <span class="custom-border">3</span>
               </div>
@@ -31,48 +31,82 @@
             <p class="text-center">Please fill up the blank fields below</p>
           </div>
         </div>
-    </div>
+    </div>     
       
-    <!-- Booking -->
+    <!-- Payment -->
     <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <img src="../img/sofa.jpeg" alt="Gambar" class="img-fluid">
-          </div>
-          <div class="col-lg-6" style="padding-top: 80px;">
-            <div class="row">
-              <div class="col-6">
-                <div class="form-group">
-                  <label for="firstName">First Name</label>
-                  <input type="text" class="form-control" id="firstName" placeholder="First Name" style="background-color: #D9D9D94F;">
-                </div>
-                <div class="form-group">
-                  <label for="lastName">Last Name</label>
-                  <input type="text" class="form-control" id="lastName" placeholder="Last Name" style="background-color: #D9D9D94F;">
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="form-group">
-                  <label for="email">Email Address</label>
-                  <input type="email" class="form-control" id="email" placeholder="Email Address" style="background-color: #D9D9D94F;">
-                </div>
-                <div class="form-group">
-                  <label for="phone">No. Phone</label>
-                  <input type="text" class="form-control" id="phone" placeholder="No. Phone" style="background-color: #D9D9D94F;">
+            <div class="card-deck">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="../img/bni.png" alt="Card Image 1" class="img-fluid">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Bank Negara Indonesia</h5>
+                      <p class="card-text">
+                        4321 8765 <br>
+                        Interior Decoration</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-6" style="padding-top: 20px; padding-left: 165px;">
-                <a href="./booking2.html" class="btn btn-primary" style="background-color: #F0188D; color: black;">Continue to Book</a>
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="../img/mandiri.png" alt="Card Image 2" class="img-fluid">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Mandiri</h5>
+                      <p class="card-text">4321 8765 <br>
+                        Interior Decoration</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-6" style="padding-top: 20px; padding-left: 20px;">
-                <a href="#" class="btn btn-secondary" style="background-color: #D9D9D9; color: #00000080;">Cancel</a>
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="../img/bca.png" alt="Card Image 3" class="img-fluid">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Bank Central Asia</h5>
+                      <p class="card-text">4321 8765 <br>
+                        Interior Decoration</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <div class="col-lg-6" style="padding-top: 80px;">
+            <div class="form-group">
+              <label for="uploadFile">Upload Bukti Transfer</label>
+              <input type="file" class="form-control" id="uploadFile" placeholder="Browse to File" style="background-color: #A68C9A;">
+            </div>
+            <div class="form-group">
+              <label for="asalBank">Asal Bank</label>
+              <input type="text" class="form-control" id="asalBank" placeholder="Browse to File" style="background-color: #A68C9A;">
+            </div>
+            <div class="form-group">
+              <label for="namaPengirim">Nama Pengirim</label>
+              <input type="text" class="form-control" id="namaPengirim" placeholder="Browse to File" style="background-color: #A68C9A;">
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="./booking3.html" class="btn btn-primary" style="background-color: #F0188D; color: black;">Confirm Payment</a>
+          </div>
+          <div class="text-center">
+            <a href="#" class="btn btn-primary" style="background-color: #D9D9D9; color: #00000080; margin-top: 10px; width: 145px;">Cancel</a>
+          </div>
         </div>
     </div>
-    <!-- Akhir Booking -->
-    
+    <!-- Akhir Payment -->
+
     <!-- Footer -->
     <hr style="color: #D9D9D9;">
     <footer>

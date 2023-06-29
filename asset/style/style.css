@@ -39,3 +39,40 @@ header{
   border-top: 2px solid black;
   color: #D9D9D9;
 }
+
+.checkmark {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid pink;
+  background-color: pink;
+  position: relative;
+}
+
+.checkmark::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 12px;
+  height: 6px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+}
+
+.custom-border {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #A68C9A;
+  background-color: #A68C9A;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+

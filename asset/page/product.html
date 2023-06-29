@@ -31,24 +31,28 @@
               </li>
             </ul>
             <a class="navbar-brand" href="#">
-              <img src="../img/logo.png" alt="logo" width="25" height="24">
+              <img src="../img/logo.png" alt="logo" width="25" height="24" style="margin-bottom: 5px; margin-right: -7px;">
             </a>
             <span class="navbar-text" style="color: black; padding-top: 10px; margin-left: 0; font-family: 'Montserrat', sans-serif; font-size: 18px;">
-              Hi, Nanda
+              Hi, Nada
             </span>
           </div>
         </div>
       </nav>
       
-    <!-- Akhir Navbar -->
-    <p style="float: left; margin-left: 100px; font-size: 18px;"><span style="color: #A7A5A5;">Home</span> / Detail Product</p>
+    <!-- Akhir Navbar --> 
 
-    <div class="container" style="margin-left: -60px;" id="categories">
+    <div class="container" id="categories">
         <div class="row">
-          <div class="col-lg-6" style="padding-top: 40px;">
+          <div class="col-lg-12">
+            <p style="color: #D9D9D9; font-weight: bold; font-size: 20px; padding-top: 20px;">Home <span style="color: black;">/ Detail Product</span></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-12" style="padding-top: 50px;">
             <img src="../img/sofa.jpeg" alt="Image 1" class="img-fluid mx-auto d-block" style="max-width: 100%; border-radius: 8px;">
           </div>
-          <div class="col-lg-6" style="padding-top: 30px;">
+          <div class="col-lg-6 col-md-12">
             <div class="row">
               <div class="col-md-6">
                 <img src="../img/sofa.jpeg" alt="Image 2" class="img-fluid mb-3 mx-auto d-block" style="max-width: 100%; border-radius: 15px; padding-top: 10px;">
@@ -65,7 +69,8 @@
             </div>
           </div>
         </div>
-    </div>
+      </div>
+      
       
       <div class="container" style="margin-bottom: 30px; padding-top: 20px;" id="product">
         <div class="row">
@@ -94,24 +99,56 @@
                         <div class="input-group-append">
                           <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: #3EDE91B0;"></button>
                           <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#"></a>
+                            <a class="dropdown-item" href="#" onclick="changeColor('White')">White</a>
+                            <a class="dropdown-item" href="#" onclick="changeColor('Black')">Black</a>
+                            <a class="dropdown-item" href="#" onclick="changeColor('Pink')">Pink</a>
                           </div>
                         </div>
                       </div>
+                      
+                      <script>
+                        function changeColor(color) {
+                          document.getElementById('color').value = color;
+                        }
+                      </script>                      
                     </div>
                   </div>
+
                   <div class="col-6">
                     <div class="form-group">
                       <label for="size">Size</label>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <button class="btn btn-outline-secondary" type="button" style="background-color: #DA0B0BAD;">-</button>
+                          <button class="btn btn-outline-secondary" type="button" style="background-color: #DA0B0BAD;" onclick="decreaseSize()">-</button>
                         </div>
                         <input type="text" class="form-control text-center" id="size" value="M" readonly style="background-color: #D9D9D9;">
                         <div class="input-group-append">
-                          <button class="btn btn-outline-secondary" type="button" style="background: #3EDE91B0;">+</button>
+                          <button class="btn btn-outline-secondary" type="button" style="background: #3EDE91B0;" onclick="increaseSize()">+</button>
                         </div>
                       </div>
+                      
+                      <script>
+                        var sizes = ["S", "M", "L"];
+                        var currentIndex = 1;
+                      
+                        function increaseSize() {
+                          if (currentIndex < sizes.length - 1) {
+                            currentIndex++;
+                            updateSize();
+                          }
+                        }
+                      
+                        function decreaseSize() {
+                          if (currentIndex > 0) {
+                            currentIndex--;
+                            updateSize();
+                          }
+                        }
+                      
+                        function updateSize() {
+                          document.getElementById('size').value = sizes[currentIndex];
+                        }
+                      </script>                      
                     </div>
                   </div>
                 </div>

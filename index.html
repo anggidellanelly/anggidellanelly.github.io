@@ -15,34 +15,48 @@
     <header>
 
     </header>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-transparent">
-        <div class="container-fluid" style="margin-right: 150px;">
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+          const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+        
+          navLinks.forEach((link) => {
+            link.addEventListener("mouseenter", () => {
+              link.style.transform = "translateY(-3px)";
+            });
+        
+            link.addEventListener("mouseleave", () => {
+              link.style.transform = "translateY(0)";
+            });
+          });
+        });
+        </script>
+        
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-transparent">
+          <div class="container-fluid" style="margin-right: 150px;">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto ms-2" style="font-family: 'Montserrat', sans-serif;">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">
-                            <span style="color: hotpink;">Home</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#categories">Categories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./asset/page/product.html">Product</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sign Up</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sign In</a>
-                    </li>
-                </ul>
+              <ul class="navbar-nav ms-auto ms-2" style="font-family: 'Montserrat', sans-serif;">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html"><span style="color: hotpink;">Home</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#categories">Categories</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./asset/page/product.html">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./asset/page/product.html">Sign In</a>
+                </li>
+              </ul>
             </div>
-        </div>
-    </nav>
+          </div>
+        </nav>
     <!-- Akhir Navbar -->
 
     <div class="container" style="padding: 20px;">
